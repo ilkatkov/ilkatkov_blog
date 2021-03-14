@@ -11,24 +11,14 @@
 </div>
 </div>
 <div class="content_div">
+@foreach ($posts as $post)
     <div class="post">
-        Категория
-        <h3>Новый пост</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci unde praesentium temporibus architecto in placeat voluptas, nam minus, ut eum veritatis dolorem iure sint labore ducimus blanditiis modi corporis odio.</p>
+        {{$post['category_id']}}
+        <h3>{{$post['title']}}</h3>
+        <p>{{$post['description']}}</p>
         <button>Открыть</button>
     </div>
-    <div class="post">
-        Категория
-        <h3>Новый пост</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci unde praesentium temporibus architecto in placeat voluptas, nam minus, ut eum veritatis dolorem iure sint labore ducimus blanditiis modi corporis odio.</p>
-        <button>Открыть</button>
-    </div>
-    <div class="post">
-        Категория
-        <h3>Новый пост</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci unde praesentium temporibus architecto in placeat voluptas, nam minus, ut eum veritatis dolorem iure sint labore ducimus blanditiis modi corporis odio.</p>
-        <button>Открыть</button>
-    </div>
+@endforeach
 </div>
 <div class="footer_div">
     <button>1</button>
